@@ -11,13 +11,14 @@
 		61839EA711E554C349849721 /* Pods_Habit_By_BitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228CCA7300D817B2E4B9D9E8 /* Pods_Habit_By_BitUITests.framework */; };
 		659379B445E69F08CB2E6A64 /* Pods_Habit_By_BitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB1C1FE5137CAFA668AC98 /* Pods_Habit_By_BitTests.framework */; };
 		E52DACB21FF7C09400C03DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACB11FF7C09400C03DCF /* AppDelegate.swift */; };
-		E52DACB41FF7C09400C03DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACB31FF7C09400C03DCF /* ViewController.swift */; };
 		E52DACB71FF7C09400C03DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52DACB51FF7C09400C03DCF /* Main.storyboard */; };
 		E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E52DACB81FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld */; };
 		E52DACBC1FF7C09400C03DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52DACBB1FF7C09400C03DCF /* Assets.xcassets */; };
 		E52DACBF1FF7C09400C03DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52DACBD1FF7C09400C03DCF /* LaunchScreen.storyboard */; };
 		E52DACCA1FF7C09500C03DCF /* Habit_By_BitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACC91FF7C09500C03DCF /* Habit_By_BitTests.swift */; };
 		E52DACD51FF7C09500C03DCF /* Habit_By_BitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACD41FF7C09500C03DCF /* Habit_By_BitUITests.swift */; };
+		E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */; };
+		E52DACE81FF7C25300C03DCF /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACE71FF7C25300C03DCF /* CalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		DA093993BC585E23EA3D8A69 /* Pods-Habit By Bit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit By Bit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habit By Bit/Pods-Habit By Bit.release.xcconfig"; sourceTree = "<group>"; };
 		E52DACAE1FF7C09400C03DCF /* Habit By Bit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit By Bit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52DACB11FF7C09400C03DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E52DACB31FF7C09400C03DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52DACB61FF7C09400C03DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52DACB91FF7C09400C03DCF /* Habit_By_Bit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Habit_By_Bit.xcdatamodel; sourceTree = "<group>"; };
 		E52DACBB1FF7C09400C03DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		E52DACD01FF7C09500C03DCF /* Habit By BitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Habit By BitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52DACD41FF7C09500C03DCF /* Habit_By_BitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit_By_BitUITests.swift; sourceTree = "<group>"; };
 		E52DACD61FF7C09500C03DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E52DACE71FF7C25300C03DCF /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				E52DACB11FF7C09400C03DCF /* AppDelegate.swift */,
-				E52DACB31FF7C09400C03DCF /* ViewController.swift */,
+				E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */,
+				E52DACE71FF7C25300C03DCF /* CalendarCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -485,9 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */,
 				E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */,
-				E52DACB41FF7C09400C03DCF /* ViewController.swift in Sources */,
 				E52DACB21FF7C09400C03DCF /* AppDelegate.swift in Sources */,
+				E52DACE81FF7C25300C03DCF /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
