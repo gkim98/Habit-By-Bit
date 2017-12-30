@@ -145,7 +145,6 @@
 				E52DACE31FF7C13900C03DCF /* View */,
 				E52DACE21FF7C13400C03DCF /* Controller */,
 				E52DACBB1FF7C09400C03DCF /* Assets.xcassets */,
-				E52DACBD1FF7C09400C03DCF /* LaunchScreen.storyboard */,
 				E52DACC01FF7C09400C03DCF /* Info.plist */,
 				E52DACB81FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld */,
 			);
@@ -184,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E52DACB51FF7C09400C03DCF /* Main.storyboard */,
+				E52DACBD1FF7C09400C03DCF /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
