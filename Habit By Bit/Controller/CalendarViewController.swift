@@ -12,6 +12,9 @@ import JTAppleCalendar
 class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     
+    let nonMonthDateColor = UIColor.gray
+    let defaultDateColor = UIColor.black
+    let selectedDateColor = UIColor.red
     
     let formatter = DateFormatter()
 
@@ -24,6 +27,19 @@ class CalendarViewController: UIViewController {
     func setupCalendarView() {
         calendarView.minimumLineSpacing = 0
         calendarView.minimumInteritemSpacing = 0
+    }
+    
+    func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
+        guard let validCell = view as? CalendarCell else {return}
+        if cellState.isSelected {
+            validCell.dateLabel.textColor = selectedDateColor
+        } else {
+            if cellState.dateBelongsTo == .thisMonth {
+                validCell.dateLabel.textColor = defaultDateColor
+            } else {
+                validCell.dateLabel.textColor = nonMonthDateColor
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,24 +73,18 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         cell.dateLabel.text = cellState.text
         
         // guards against problems relating to the reuse of cells
-        if cellState.isSelected {
-            cell.dateLabel.textColor = UIColor.red
-        } else {
-            cell.dateLabel.textColor = UIColor.black
-        }
+        handleCellTextColor(view: cell, cellState: cellState)
         
         return cell
     }
     
     // function for when a cell is selected
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
-        guard let validCell = cell as? CalendarCell else {return}
-        validCell.dateLabel.textColor = UIColor.red
+        handleCellTextColor(view: cell, cellState: cellState)
         
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
-        guard let validCell = cell as? CalendarCell else {return}
-        validCell.dateLabel.textColor = UIColor.black
+        handleCellTextColor(view: cell, cellState: cellState)
     }
 }
