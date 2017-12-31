@@ -19,6 +19,9 @@
 		E52DACD51FF7C09500C03DCF /* Habit_By_BitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACD41FF7C09500C03DCF /* Habit_By_BitUITests.swift */; };
 		E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */; };
 		E52DACE81FF7C25300C03DCF /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACE71FF7C25300C03DCF /* CalendarCell.swift */; };
+		E52DAD291FF91DB200C03DCF /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */; };
+		E52DAD2D1FF9272400C03DCF /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAD2B1FF9272400C03DCF /* HabitCell.swift */; };
+		E52DAD2E1FF9272400C03DCF /* HabitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E52DAD2C1FF9272400C03DCF /* HabitCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		E52DACD61FF7C09500C03DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E52DACE71FF7C25300C03DCF /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		E52DAD2B1FF9272400C03DCF /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
+		E52DAD2C1FF9272400C03DCF /* HabitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +178,10 @@
 		E52DACE21FF7C13400C03DCF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E52DAD2A1FF91DC800C03DCF /* Custom Cells */,
 				E52DACB11FF7C09400C03DCF /* AppDelegate.swift */,
 				E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */,
-				E52DACE71FF7C25300C03DCF /* CalendarCell.swift */,
+				E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +200,16 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E52DAD2A1FF91DC800C03DCF /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E52DACE71FF7C25300C03DCF /* CalendarCell.swift */,
+				E52DAD2B1FF9272400C03DCF /* HabitCell.swift */,
+				E52DAD2C1FF9272400C03DCF /* HabitCell.xib */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +330,7 @@
 			files = (
 				E52DACBF1FF7C09400C03DCF /* LaunchScreen.storyboard in Resources */,
 				E52DACBC1FF7C09400C03DCF /* Assets.xcassets in Resources */,
+				E52DAD2E1FF9272400C03DCF /* HabitCell.xib in Resources */,
 				E52DACB71FF7C09400C03DCF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +508,9 @@
 			files = (
 				E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */,
 				E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */,
+				E52DAD2D1FF9272400C03DCF /* HabitCell.swift in Sources */,
 				E52DACB21FF7C09400C03DCF /* AppDelegate.swift in Sources */,
+				E52DAD291FF91DB200C03DCF /* HabitsViewController.swift in Sources */,
 				E52DACE81FF7C25300C03DCF /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
