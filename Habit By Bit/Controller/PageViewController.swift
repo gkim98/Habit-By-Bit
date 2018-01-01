@@ -12,8 +12,8 @@ class PageViewController: UIPageViewController {
     
     fileprivate lazy var pages: [UIViewController] = {
         return [
-            self.getViewController(withIdentifier: "CalendarViewController"),
-            self.getViewController(withIdentifier: "HabitsViewController")
+            self.getViewController(withIdentifier: "HabitsViewController"),
+            self.getViewController(withIdentifier: "CalendarViewController")
         ]
     }()
     
@@ -43,7 +43,8 @@ extension PageViewController: UIPageViewControllerDataSource {
         
         guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
         let previousIndex = viewControllerIndex - 1
-        guard previousIndex >= 0 else { return pages.last }
+        //guard previousIndex >= 0 else { return pages.last }
+        guard previousIndex >= 0 else { return nil }
         guard pages.count > previousIndex else { return nil }
         return pages[previousIndex]
     }
@@ -52,7 +53,8 @@ extension PageViewController: UIPageViewControllerDataSource {
         
         guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
         let nextIndex = viewControllerIndex + 1
-        guard nextIndex < pages.count else { return pages.first }
+        //guard nextIndex < pages.count else { return pages.first }
+        guard nextIndex < pages.count else { return nil }
         guard pages.count > nextIndex else { return nil }
         return pages[nextIndex]
     }

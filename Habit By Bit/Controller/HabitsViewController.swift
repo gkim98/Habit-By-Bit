@@ -38,7 +38,7 @@ extension HabitsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func configureTableView() {
         habitsTableView.rowHeight = UITableViewAutomaticDimension
-        habitsTableView.estimatedRowHeight = 120.0
+        habitsTableView.estimatedRowHeight = 200.0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

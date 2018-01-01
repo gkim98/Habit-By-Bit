@@ -9,7 +9,8 @@
 import UIKit
 
 class HabitCell: UITableViewCell {
-
+    @IBOutlet weak var testView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
