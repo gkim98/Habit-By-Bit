@@ -22,6 +22,7 @@
 		E52DAD291FF91DB200C03DCF /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */; };
 		E52DAD2D1FF9272400C03DCF /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAD2B1FF9272400C03DCF /* HabitCell.swift */; };
 		E52DAD2E1FF9272400C03DCF /* HabitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E52DAD2C1FF9272400C03DCF /* HabitCell.xib */; };
+		E52DAD6F1FFA5F3200C03DCF /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAD6E1FFA5F3200C03DCF /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
 		E52DAD2B1FF9272400C03DCF /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
 		E52DAD2C1FF9272400C03DCF /* HabitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitCell.xib; sourceTree = "<group>"; };
+		E52DAD6E1FFA5F3200C03DCF /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				E52DACB11FF7C09400C03DCF /* AppDelegate.swift */,
 				E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */,
 				E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */,
+				E52DAD6E1FFA5F3200C03DCF /* PageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */,
+				E52DAD6F1FFA5F3200C03DCF /* PageViewController.swift in Sources */,
 				E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */,
 				E52DAD2D1FF9272400C03DCF /* HabitCell.swift in Sources */,
 				E52DACB21FF7C09400C03DCF /* AppDelegate.swift in Sources */,
