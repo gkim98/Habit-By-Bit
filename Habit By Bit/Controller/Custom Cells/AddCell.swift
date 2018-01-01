@@ -1,16 +1,15 @@
 //
-//  HabitCell.swift
+//  AddCell.swift
 //  Habit By Bit
 //
-//  Created by Grant Kim on 12/31/17.
-//  Copyright © 2017 2.5 Yellow. All rights reserved.
+//  Created by Grant Kim on 1/1/18.
+//  Copyright © 2018 2.5 Yellow. All rights reserved.
 //
 
 import UIKit
 
-class HabitCell: UITableViewCell {
-    @IBOutlet weak var testLabel: UILabel!
-    
+class AddCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

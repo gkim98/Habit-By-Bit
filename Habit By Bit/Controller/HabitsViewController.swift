@@ -12,6 +12,9 @@ class HabitsViewController: UIViewController {
 
     @IBOutlet weak var habitsTableView: UITableView!
     
+    //test
+    let testArray = ["1", "2", "3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +36,7 @@ extension HabitsViewController: UITableViewDelegate, UITableViewDataSource {
         habitsTableView.delegate = self
         habitsTableView.dataSource = self
         habitsTableView.register(UINib(nibName: "HabitCell", bundle: nil), forCellReuseIdentifier: "habitCell")
+        habitsTableView.register(UINib(nibName: "AddCell", bundle: nil), forCellReuseIdentifier: "addCell")
         configureTableView()
     }
     
@@ -42,13 +46,22 @@ extension HabitsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return testArray.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // change when Core Data model is made
+        if indexPath.row == testArray.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "addCell", for: indexPath) as! AddCell
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "habitCell", for: indexPath) as! HabitCell
+        cell.testLabel.text = testArray[indexPath.row]
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
