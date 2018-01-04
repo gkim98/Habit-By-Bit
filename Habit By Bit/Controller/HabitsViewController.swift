@@ -63,5 +63,11 @@ extension HabitsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // placeholder for condition later
+        if indexPath.row == 3 {
+            performSegue(withIdentifier: "addNewHabit", sender: self)
+        }
     }
 }

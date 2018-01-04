@@ -10,6 +10,7 @@
 		099DDBE35C36CA1E0EB23823 /* Pods_Habit_By_Bit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3644EDE42C16C0FA031BDA3C /* Pods_Habit_By_Bit.framework */; };
 		61839EA711E554C349849721 /* Pods_Habit_By_BitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228CCA7300D817B2E4B9D9E8 /* Pods_Habit_By_BitUITests.framework */; };
 		659379B445E69F08CB2E6A64 /* Pods_Habit_By_BitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB1C1FE5137CAFA668AC98 /* Pods_Habit_By_BitTests.framework */; };
+		E52C47D31FFE914600190729 /* NewHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C47D21FFE914600190729 /* NewHabitViewController.swift */; };
 		E52DACB21FF7C09400C03DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DACB11FF7C09400C03DCF /* AppDelegate.swift */; };
 		E52DACB71FF7C09400C03DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52DACB51FF7C09400C03DCF /* Main.storyboard */; };
 		E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E52DACB81FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld */; };
@@ -54,6 +55,7 @@
 		9FBB1C1FE5137CAFA668AC98 /* Pods_Habit_By_BitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_By_BitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83B90871A9A27A4EF8D1FAC /* Pods-Habit By Bit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit By Bit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Habit By Bit/Pods-Habit By Bit.debug.xcconfig"; sourceTree = "<group>"; };
 		DA093993BC585E23EA3D8A69 /* Pods-Habit By Bit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit By Bit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habit By Bit/Pods-Habit By Bit.release.xcconfig"; sourceTree = "<group>"; };
+		E52C47D21FFE914600190729 /* NewHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitViewController.swift; sourceTree = "<group>"; };
 		E52DACAE1FF7C09400C03DCF /* Habit By Bit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit By Bit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52DACB11FF7C09400C03DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52DACB61FF7C09400C03DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				E52DACE51FF7C18E00C03DCF /* CalendarViewController.swift */,
 				E52DAD281FF91DB200C03DCF /* HabitsViewController.swift */,
 				E52DAD6E1FFA5F3200C03DCF /* PageViewController.swift */,
+				E52C47D21FFE914600190729 /* NewHabitViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,8 +199,8 @@
 		E52DACE31FF7C13900C03DCF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E52DACB51FF7C09400C03DCF /* Main.storyboard */,
 				E52DACBD1FF7C09400C03DCF /* LaunchScreen.storyboard */,
+				E52DACB51FF7C09400C03DCF /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				E52DACE61FF7C18E00C03DCF /* CalendarViewController.swift in Sources */,
 				E52DAD741FFA703500C03DCF /* AddCell.swift in Sources */,
+				E52C47D31FFE914600190729 /* NewHabitViewController.swift in Sources */,
 				E52DAD6F1FFA5F3200C03DCF /* PageViewController.swift in Sources */,
 				E52DACBA1FF7C09400C03DCF /* Habit_By_Bit.xcdatamodeld in Sources */,
 				E52DAD2D1FF9272400C03DCF /* HabitCell.swift in Sources */,
